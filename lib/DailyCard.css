@@ -1,0 +1,7 @@
+.Daily-card-container {
+  height: 125px;
+  width: 125px;
+  border: 2px solid blue;
+  text-align: center;
+  display:inline-block;
+}

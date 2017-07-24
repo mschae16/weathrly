@@ -1,0 +1,8 @@
+.Hourly-card-container {
+  height: 125px;
+  width: 125px;
+  border: 2px solid red;
+  text-align: center;
+  display: inline-block;
+
+}
