@@ -1,6 +1,13 @@
+.Hourly-card-cont {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .Hourly-card-container {
-  height: 125px;
-  width: 125px;
+  height: 80px;
+  width: 80px;
   border: 2px solid white;
   text-align: center;
   display: inline-block;

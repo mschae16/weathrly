@@ -6,7 +6,7 @@
   background-image: url('https://tylermoeller.github.io/local-weather-app/assets/img/clear.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 55vh;
   width: 100%;
 }
 .Current-condition-container {
