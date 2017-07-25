@@ -3,5 +3,7 @@
   width: 125px;
   border: 2px solid blue;
   text-align: center;
-  display:inline-block;
+  position: absolute;
+  right: 100px;
+  top: 100px;
 }
