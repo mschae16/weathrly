@@ -2,8 +2,8 @@
   height: 100px;
   width: 700px;
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 75px;
+  top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
