@@ -1,0 +1,59 @@
+
+
+.Condition-background {
+  background-image: url('https://tylermoeller.github.io/local-weather-app/assets/img/clear.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+  z-index: -100;
+  margin: auto;
+  position: relative;
+}
+.Current-condition-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  height: 300px;
+  width: 600px;
+  top: 250px;
+  left: 200px;
+}
+
+.Temperature-container {
+  background-color: #FFF;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  opacity: .30;
+  text-align: center;
+  box-shadow: 8px 8px 5px #000;
+}
+
+.Temperature {
+  color: #000;
+  font-size: 96px;
+  margin: 0;
+  padding: 90px 0  0 20px;
+
+}
+
+.Current-location-container {
+  color: #FFF;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  align-items: center;
+
+}
+
+.Location {
+  font-size: 50px;
+  text-shadow: 1px 1px #000;
+}
+
+.Current-text{
+  font-size: 16px;
+  padding-bottom: 15px;
+  text-shadow: 1px 1px #000;
+}
