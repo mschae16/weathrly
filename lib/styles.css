@@ -9,5 +9,6 @@ body, html, section, main, div, aside, p {
 }
 
 body {
+  background-color: navy;
   font-family: 'Roboto', sans-serif;
 }
