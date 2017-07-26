@@ -12728,7 +12728,7 @@
 
 
 	// module
-	exports.push([module.id, "*{\n  box-sizing: border-box;\n}\n\nbody, html, section, main, div, aside, p {\n  margin: 0;\n  border: 0;\n  padding: 0;\n}\n\nbody {\n  font-family: 'Roboto', sans-serif;\n}\n", ""]);
+	exports.push([module.id, "*{\n  box-sizing: border-box;\n}\n\nbody, html, section, main, div, aside, p {\n  margin: 0;\n  border: 0;\n  padding: 0;\n}\n\nbody {\n  background-color: #3C5D87;\n  font-family: 'Roboto', sans-serif;\n}\n", ""]);
 
 	// exports
 
@@ -13089,7 +13089,19 @@
 	  function App() {
 	    _classCallCheck(this, App);
 
-	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
+
+	    _this.state = {
+	      city: 'Denver',
+	      usState: 'CO',
+	      temperature: 80,
+	      weatherSummary: 'Pretty rad',
+	      date: Date.now(),
+	      time: '12:17 PM',
+	      highTemp: 94,
+	      lowTemp: 68
+	    };
+	    return _this;
 	  }
 
 	  _createClass(App, [{
@@ -13099,7 +13111,16 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_Welcome2.default, null),
-	        _react2.default.createElement(_CurrentWeather2.default, null),
+	        _react2.default.createElement(_CurrentWeather2.default, {
+	          temperature: this.state.temperatemperature,
+	          weatherSummary: this.state.weatherSummary,
+	          city: this.state.city,
+	          usState: this.state.usState,
+	          date: this.state.date,
+	          time: this.state.time,
+	          highTemp: this.state.highTemp,
+	          lowTemp: this.state.lowTemp
+	        }),
 	        _react2.default.createElement(_HourlyWeather2.default, null),
 	        _react2.default.createElement(_DailyWeather2.default, null)
 	      );
@@ -13149,18 +13170,17 @@
 	  _createClass(Welcome, [{
 	    key: 'render',
 	    value: function render() {
-
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'Heading-container' },
+	        _react2.default.createElement(
+	          'h1',
+	          { className: 'Heading' },
+	          'Weathrly'
+	        ),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'Search-bar-cont' },
-	          _react2.default.createElement(
-	            'h1',
-	            { className: 'Heading' },
-	            'Weatherly'
-	          ),
 	          _react2.default.createElement('input', { className: 'Search-input', type: 'text', placeholder: 'Enter Your Location' }),
 	          _react2.default.createElement(
 	            'button',
@@ -13212,7 +13232,7 @@
 
 
 	// module
-	exports.push([module.id, ".Search-bar-cont {\n  height: 100px;\n  width: 700px;\n  position: absolute;\n  right: 75px;\n  top: 50px;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n}\n\n.Heading {\n  display: flex;\n  margin-top: 0;\n  color: #FFF;\n}\n\n.Search-input {\n  height: 25px;\n  width: 200px;\n}\n\n.Search-btn {\n  border: none;\n  height: 25px;\n  width: 100px;\n}\n\n.Search-input, .Search-btn {\n  outline: none;\n  border: none;\n  opacity: .50;\n  border-radius: 5px;\n}\n", ""]);
+	exports.push([module.id, ".Heading-container {\n  display: flex;\n  justify-content: space-between;\n  padding: 20px;\n  height: 75px;\n}\n\n.Search-bar-cont {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  height: 100px;\n  width: 700px;\n}\n\n.Heading {\n  display: flex;\n  margin-top: 0;\n  color: #FFF;\n}\n\n.Search-input {\n  height: 25px;\n  width: 200px;\n  padding: 10px;\n}\n\n.Search-btn {\n  margin-left: 10px;\n  border: none;\n  height: 25px;\n  width: 100px;\n}\n\n.Search-input, .Search-btn {\n  outline: none;\n  border: none;\n  opacity: .50;\n  border-radius: 5px;\n}\n", ""]);
 
 	// exports
 
@@ -13254,11 +13274,10 @@
 
 	  _createClass(CurrentWeather, [{
 	    key: 'render',
-	    value: function render() {
+	    value: function render(props) {
 	      return _react2.default.createElement(
 	        'div',
-	        null,
-	        _react2.default.createElement('div', { className: 'Condition-background' }),
+	        { className: 'Condition-background' },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'Current-condition-container' },
@@ -13268,12 +13287,13 @@
 	            _react2.default.createElement(
 	              'h1',
 	              { className: 'Temperature' },
-	              '80\xB0'
+	              props.temperature,
+	              '\xB0'
 	            ),
 	            _react2.default.createElement(
 	              'p',
 	              { className: 'Current-conditon-text' },
-	              'Pretty ok so far'
+	              props.weatherSummary
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -13282,27 +13302,33 @@
 	            _react2.default.createElement(
 	              'h1',
 	              { className: 'Location' },
-	              'Denver, Co'
+	              props.city,
+	              ', ',
+	              props.usState
 	            ),
 	            _react2.default.createElement(
 	              'p',
 	              { className: 'Current-text' },
-	              'July 4, 2017'
+	              props.date
 	            ),
 	            _react2.default.createElement(
 	              'p',
 	              { className: 'Current-text' },
-	              '12:17 PM'
+	              props.time
 	            ),
 	            _react2.default.createElement(
 	              'p',
 	              { className: 'Current-text' },
-	              'High: 95\xB0'
+	              'High: ',
+	              props.highTemp,
+	              '\xB0'
 	            ),
 	            _react2.default.createElement(
 	              'p',
 	              { className: 'Current-text' },
-	              'Low: 65\xB0'
+	              'Low: ',
+	              props.lowTemp,
+	              '\xB0'
 	            )
 	          )
 	        )
@@ -13350,7 +13376,7 @@
 
 
 	// module
-	exports.push([module.id, "\n\n.Condition-background {\n  background-image: url('https://tylermoeller.github.io/local-weather-app/assets/img/clear.jpg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100vh;\n  width: 100%;\n  z-index: -100;\n  margin: auto;\n  position: relative;\n}\n.Current-condition-container {\n  display: flex;\n  flex-direction: row;\n  position: absolute;\n  height: 300px;\n  width: 600px;\n  top: 250px;\n  left: 200px;\n}\n\n.Temperature-container {\n  background-color: #FFF;\n  border-radius: 50%;\n  height: 300px;\n  width: 300px;\n  opacity: .30;\n  text-align: center;\n  box-shadow: 8px 8px 5px #000;\n}\n\n.Temperature {\n  color: #000;\n  font-size: 96px;\n  margin: 0;\n  padding: 90px 0  0 20px;\n\n}\n\n.Current-location-container {\n  color: #FFF;\n  height: 300px;\n  width: 300px;\n  text-align: center;\n  align-items: center;\n\n}\n\n.Location {\n  font-size: 50px;\n  text-shadow: 1px 1px #000;\n}\n\n.Current-text{\n  font-size: 16px;\n  padding-bottom: 15px;\n  text-shadow: 1px 1px #000;\n}\n", ""]);
+	exports.push([module.id, "\n\n.Condition-background {\n  display: flex;\n  align-items: center;\n  background-image: url('https://tylermoeller.github.io/local-weather-app/assets/img/clear.jpg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 55vh;\n  width: 100%;\n}\n.Current-condition-container {\n  display: flex;\n  flex-direction: row;\n  margin: auto;\n  height: 300px;\n  width: 600px;\n}\n\n.Temperature-container {\n  background-color: #FFF;\n  border-radius: 50%;\n  height: 300px;\n  width: 300px;\n  opacity: .30;\n  text-align: center;\n  box-shadow: 8px 8px 5px #000;\n}\n\n.Temperature {\n  color: #000;\n  font-size: 96px;\n  margin: 0;\n  padding: 90px 0  0 20px;\n\n}\n\n.Current-location-container {\n  color: #FFF;\n  height: 300px;\n  width: 300px;\n  text-align: center;\n  align-items: center;\n\n}\n\n.Location {\n  font-size: 50px;\n  text-shadow: 1px 1px #000;\n}\n\n.Current-text{\n  font-size: 16px;\n  padding-bottom: 15px;\n  text-shadow: 1px 1px #000;\n}\n", ""]);
 
 	// exports
 
@@ -13507,7 +13533,7 @@
 
 
 	// module
-	exports.push([module.id, ".Hourly-card-container {\n  height: 125px;\n  width: 125px;\n  border: 2px solid white;\n  text-align: center;\n  display: inline-block;\n  color: #FFF;\n\n}\n", ""]);
+	exports.push([module.id, ".Hourly-card-cont {\n  width: 80%;\n  margin: auto;\n  display: flex;\n  justify-content: space-between;\n}\n\n.Hourly-card-container {\n  height: 80px;\n  width: 80px;\n  border: 2px solid white;\n  text-align: center;\n  display: inline-block;\n  color: #FFF;\n\n}\n", ""]);
 
 	// exports
 
@@ -13558,7 +13584,7 @@
 	      }
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'Daily-card-cont' },
 	        dailyCards
 	      );
 	    }
@@ -13669,7 +13695,7 @@
 
 
 	// module
-	exports.push([module.id, ".Daily-card-container {\n  height: 125px;\n  width: 125px;\n  border: 2px solid blue;\n  text-align: center;\n  display: inline-block;\n}\n", ""]);
+	exports.push([module.id, ".Daily-card-cont {\n  margin-top: 20px;\n  margin: auto;\n  display: flex;\n  justify-content: space-between;\n}\n\n.Daily-card-container {\n  margin-top: 20px;\n  height: 80px;\n  width: 80px;\n  border: 2px solid blue;\n  text-align: center;\n  box-shadow: 4px 4px 2px #000;\n}\n", ""]);
 
 	// exports
 
