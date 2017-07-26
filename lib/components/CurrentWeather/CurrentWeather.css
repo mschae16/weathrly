@@ -1,8 +1,6 @@
-
-
 .Condition-background {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   background-image: url('https://tylermoeller.github.io/local-weather-app/assets/img/clear.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,11 +10,12 @@
   box-shadow: 5px 5px 25px #000;
 }
 .Current-condition-container {
+  align-items: center;
+  justify-content: center;
   display: flex;
-  flex-direction: row;
+  height: 100%;
   margin: auto;
-  height: 300px;
-  width: 600px;
+  width: 50%;
 }
 
 .Temperature-container {
@@ -24,7 +23,7 @@
   border-radius: 50%;
   height: 300px;
   width: 300px;
-  opacity: .30;
+  opacity: .45;
   text-align: center;
   box-shadow: 8px 8px 5px #000;
 }
@@ -34,16 +33,16 @@
   font-size: 96px;
   margin: 0;
   padding: 90px 0  0 20px;
-
 }
 
 .Current-location-container {
-  color: #FFF;
-  height: 300px;
-  width: 300px;
-  text-align: center;
   align-items: center;
-
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  text-align: center;
 }
 
 .Location {
