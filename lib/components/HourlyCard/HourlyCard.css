@@ -1,16 +1,19 @@
 .Hourly-card-cont {
-  width: 80%;
-  margin: auto;
   display: flex;
+  flex-direction: row;
+  height: 80px;
   justify-content: space-between;
+  left: 10%;
+  position: absolute;
+  text-shadow: 2px 2px #000;
+  top: 65%;
+  width: 80%;
+
 }
 
-.Hourly-card-container {
+.Hourly-card-container, Daily-card-container {
+  color: #FFF;
   height: 80px;
   width: 80px;
-  border: 2px solid white;
   text-align: center;
-  display: inline-block;
-  color: #FFF;
-
 }
