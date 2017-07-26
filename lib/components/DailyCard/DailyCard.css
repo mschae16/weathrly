@@ -1,12 +1,15 @@
 .Daily-card-cont {
+  margin-top: 20px;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
 
 .Daily-card-container {
+  margin-top: 20px;
   height: 80px;
   width: 80px;
   border: 2px solid blue;
   text-align: center;
+  box-shadow: 4px 4px 2px #000;
 }
