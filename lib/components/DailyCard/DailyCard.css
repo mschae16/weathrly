@@ -1,4 +1,4 @@
-.Daily-card-cont {
+.Daily-card-container {
   display: flex;
   flex-direction: row;
   height: 80px;
@@ -11,7 +11,7 @@
 
 }
 
-.Daily-card-container {
+.Daily-card {
   font-size: 12px;
   color: #FFF;
   height: 80px;
