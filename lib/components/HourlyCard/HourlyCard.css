@@ -1,4 +1,4 @@
-.Hourly-card-cont {
+.Hourly-card-container {
   display: flex;
   flex-direction: row;
   height: 80px;
@@ -11,7 +11,7 @@
 
 }
 
-.Hourly-card-container, Daily-card-container {
+.Hourly-card {
   color: #FFF;
   height: 80px;
   width: 80px;
