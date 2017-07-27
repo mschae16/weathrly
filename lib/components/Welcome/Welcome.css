@@ -1,0 +1,46 @@
+.Welcome-container {
+  background-image: url('http://wallpapercave.com/wp/2pYE05N.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 25px #000;
+  display: flex;
+  margin: auto;
+  height: 90vh;
+  width: 95%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Welcome-heading {
+  color: #FFF;
+  font-size: 100px;
+  text-shadow: 5px 3px #000;
+  margin-bottom: 20px;
+}
+
+.Welcome-search {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.Search-input-field {
+  width: 30%;
+  cursor: text;
+}
+
+.Search-button {
+  width: 10%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.Search-input-field, .Search-button {
+  opacity: .70;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  outline: none;
+  box-shadow: 5px 5px 25px #000;
+}
