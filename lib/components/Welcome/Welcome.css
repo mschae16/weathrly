@@ -47,9 +47,6 @@
 }
 
 @media screen and (max-width: 800px) {
-  .Welcome-container {
-    background-size: cover;
-  }
 
   .Search-input-field {
     width: 40%;
@@ -61,7 +58,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  .welcome-heading {
+  .Welcome-heading {
     font-size: 80px;
   }
 
@@ -74,9 +71,11 @@
   }
 
 @media screen and (max-width: 425px) {
-  .welcome-heading {
-    font-size: 70px;
+  .Welcome-heading {
+    font-size: 55px;
   }
+
+  @media screen and (max-width:)
 }
 
 
