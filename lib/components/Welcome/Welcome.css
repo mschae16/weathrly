@@ -27,12 +27,12 @@
 }
 
 .Search-input-field {
-  width: 30%;
+  width: 70%;
   cursor: text;
 }
 
 .Search-button {
-  width: 10%;
+  width: 30%;
   margin-left: 10px;
   cursor: pointer;
 }
@@ -40,11 +40,36 @@
 .Search-input-field, .Search-button {
   opacity: .70;
   border: none;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   height: 30px;
   outline: none;
   box-shadow: 5px 5px 25px #000;
 }
+
+.Drop-down-welcome {
+  background-color: white;
+  border: none;
+  border-radius: 0 0 5px 5px;
+  margin: auto;
+  margin-top: 10px;
+  max-height: 300px;
+  opacity: .70;
+  overflow: scroll;
+  position: absolute;
+  width: 69%;
+}
+
+.Giraffe-container {
+  width: 50%;
+  height: 300px;
+
+  position: relative;
+}
+
+.Possible-city {
+  list-style: none;
+}
+
 
 @media screen and (max-width: 800px) {
 
