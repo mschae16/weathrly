@@ -57,6 +57,7 @@
   overflow: scroll;
   position: absolute;
   width: 69%;
+  cursor: pointer;
 }
 
 .Giraffe-container {
