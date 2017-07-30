@@ -6,15 +6,28 @@
   left: 10%;
   position: absolute;
   text-shadow: 2px 2px #000;
-  top: 65%;
+  top: 60%;
   width: 80%;
+
 
 }
 
 .Hourly-card {
   color: #FFF;
-  font-size: 12px;
+  font-size: 16px;
   height: 80px;
   width: 80px;
   text-align: center;
+}
+
+.Text{
+  padding-top: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .Hourly-card {
+    font-size: 12px;
+    height: 70px;
+    width: 70px;
+  }
 }

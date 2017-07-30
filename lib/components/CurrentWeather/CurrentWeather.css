@@ -4,6 +4,7 @@
   background-image: url('https://tylermoeller.github.io/local-weather-app/assets/img/clear.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 65vh;
   width: 80%;
   margin: auto;
@@ -48,10 +49,28 @@
 .Location {
   font-size: 50px;
   text-shadow: 1px 1px #000;
+  padding-top: 150px;
 }
 
 .Current-text{
   font-size: 20px;
   padding-bottom: 15px;
   text-shadow: 1px 1px #000;
+}
+
+@media screen and (max-width: 850px) {
+  .Temperature-container {
+    height: 250px;
+    width: 250px;
+  }
+
+  .Temperature {
+    font-size: 65px;
+  }
+
+  .Location {
+    font-size: 40px;
+  }
+
+  
 }
