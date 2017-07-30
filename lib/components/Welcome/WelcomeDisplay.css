@@ -7,18 +7,12 @@
   margin: auto;
 }
 
-.Search-bar-cont {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  height: 100px;
-  width: 700px;
-}
 
 .Heading {
   display: flex;
   margin-top: 0;
   color: #FFF;
+  font-size: 24px;
   text-shadow: 2px 2px #000;
   font-family: 'Lemonada', cursive;
 }
@@ -43,4 +37,29 @@
   border: none;
   opacity: .50;
   border-radius: 5px;
+}
+.Search-bar-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 100px;
+  position: relative;
+}
+
+.Drop-down-refresh {
+  cursor: pointer;
+  position: absolute;
+  background-color: white;
+  overflow: scroll;
+  max-height: 600px;
+  opacity: .80;
+  width: 200px;
+  right: 110px;
+  top:55px
+
+}
+ul {
+  text-align: center;
+  padding: 0;
+
 }

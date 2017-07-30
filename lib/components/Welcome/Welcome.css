@@ -1,5 +1,6 @@
 .Welcome-container {
   background-image: url('http://wallpapercave.com/wp/2pYE05N.jpg');
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 5px 5px 25px #000;
@@ -63,8 +64,12 @@
 .Giraffe-container {
   width: 50%;
   height: 300px;
-
   position: relative;
+}
+
+ul {
+  text-align: center;
+  padding: 0;
 }
 
 .Possible-city {
