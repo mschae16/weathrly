@@ -43,7 +43,6 @@ p {
       height: 50px;
       width: 50px;
     }
-
 }
 
 @media screen and (max-width: 750px) {
@@ -73,5 +72,32 @@ p {
     font-size: 20px;
     display: inline-block;
   }
+}
+
+@media screen and (max-width: 500px) {
+  .Temp-range-text {
+    padding: 15px 20px 0 0;
+    font-size: 14px;
+  }
+
+  .Day-text {
+    padding: 15px 0 0 20px;
+  }
+
+  .Daily-card-container.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.Daily-card-container.scrollmenu  {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+
 
 }
