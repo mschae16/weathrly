@@ -5,6 +5,7 @@
   height: 75px;
   width: 80%;
   margin: auto;
+  background-color: inherit;
 }
 
 .Heading {
@@ -39,6 +40,7 @@
   opacity: .50;
   border-radius: 5px;
 }
+
 .Search-bar-cont {
   display: flex;
   flex-direction: row;
@@ -72,6 +74,10 @@ ul {
     top: 0;
     left: 10%;
     background-color: inherit;
+    z-index: 100;
   }
+
+  
+
 
 }
