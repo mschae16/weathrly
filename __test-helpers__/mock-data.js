@@ -107,8 +107,7 @@ export const mockData = {
       "high": "79",
       "low": "58"
     }
-  ]
-{
+  ],
   "currentData": {
     "temperature": 77.7,
     "location": "Denver, CO",
@@ -216,6 +215,6 @@ export const mockData = {
       "icon": "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
       "high": "79",
       "low": "58"
-    }
-  ]
-}
+    },
+  ],
+};
