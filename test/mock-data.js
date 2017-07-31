@@ -108,7 +108,7 @@ export const mockData = {
       "low": "58"
     }
   ]
-}{
+{
   "currentData": {
     "temperature": 77.7,
     "location": "Denver, CO",
