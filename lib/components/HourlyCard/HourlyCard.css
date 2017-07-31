@@ -31,3 +31,11 @@
     width: 70px;
   }
 }
+
+@media screen and (max-width: 750px) {
+.Hourly-card-container {
+  position: fixed;
+  top: 60%;
+  left: 10%;
+  }
+}
