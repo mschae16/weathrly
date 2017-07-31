@@ -5,8 +5,8 @@
   height: 75px;
   width: 80%;
   margin: auto;
+  background-color: inherit;
 }
-
 
 .Heading {
   display: flex;
@@ -16,6 +16,8 @@
   text-shadow: 2px 2px #000;
   font-family: 'Lemonada', cursive;
 }
+
+
 
 .Search-input {
   height: 25px;
@@ -38,6 +40,7 @@
   opacity: .50;
   border-radius: 5px;
 }
+
 .Search-bar-cont {
   display: flex;
   flex-direction: row;
@@ -55,11 +58,26 @@
   opacity: .80;
   width: 200px;
   right: 110px;
-  top:55px
+  top:55px;
+  z-index: 10;
 
 }
 ul {
   text-align: center;
   padding: 0;
+
+}
+
+@media screen and (max-width: 750px) {
+  .Heading-container {
+    position: fixed;
+    top: 0;
+    left: 10%;
+    background-color: inherit;
+    z-index: 100;
+  }
+
+  
+
 
 }

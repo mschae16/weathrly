@@ -1,6 +1,123 @@
 .Error-container {
+  background-image: url('https://typeset-beta.imgix.net/rehost%2F2016%2F9%2F13%2F6eebc156-80f9-4102-a1ae-2b8a94490468.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 25px #000;
+  display: flex;
+  margin: auto;
+  height: 90vh;
+  width: 95%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
 
-  height: 500px;
-  width: 500px;
-background-color: chartreuse;
+.Error-heading {
+  color: #FFF;
+  font-family: 'Lemonada', cursive;
+  font-size: 100px;
+  text-shadow: 5px 3px #000;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 190px;
+  content: 'test'
+}
+
+.Error-search {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  top: 230px;
+}
+
+.Error-input-field {
+  width: 70%;
+  cursor: text;
+}
+
+.Error-button {
+  width: 30%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.Error-input-field, .Error-button {
+  opacity: .70;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  height: 30px;
+  outline: none;
+  box-shadow: 5px 5px 25px #000;
+}
+
+.Drop-down-error{
+  background-color: white;
+  border: none;
+  border-radius: 0 0 5px 5px;
+  margin: auto;
+  margin-top: 10px;
+  max-height: 200px;
+  opacity: .70;
+  overflow: scroll;
+  position: absolute;
+  width: 69%;
+  cursor: pointer;
+  top: 255px;
+}
+
+.Giraffe-container {
+  width: 50%;
+  height: 300px;
+  position: relative;
+}
+
+ul {
+  text-align: center;
+  padding: 0;
+}
+
+.Possible-city {
+  list-style: none;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .Search-input-field {
+    width: 40%;
+  }
+
+  .Search-button {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Welcome-heading {
+    font-size: 80px;
+  }
+
+  .Search-input-field {
+    width: 50%;
+  }
+
+  .Search-button {
+    width: 30%;
+  }
+
+@media screen and (max-width: 425px) {
+  .Welcome-heading {
+    font-size: 55px;
+  }
+
+  @media screen and (max-width:)
+}
+
+
+
+
+
 }

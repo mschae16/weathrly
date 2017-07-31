@@ -44,7 +44,34 @@ p {
       width: 50px;
     }
 
+}
 
+@media screen and (max-width: 750px) {
+  .Daily-card-container {
+    flex-direction: column;
+    z-index: -1;
 
+  }
+  .Daily-card {
+    font-size: 14px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 100%;
+    box-shadow: .5px 4px 10px #000;
+  }
+
+  .Day-text {
+    float: left;
+    padding: 15px 0 0 65px;
+    font-size: 20px;
+    display: inline-block;
+  }
+
+  .Temp-range-text {
+    float: right;
+    padding: 15px 65px 0 0;
+    font-size: 20px;
+    display: inline-block;
+  }
 
 }

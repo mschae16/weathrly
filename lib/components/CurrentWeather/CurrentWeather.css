@@ -10,8 +10,9 @@
   margin: auto;
   box-shadow: 5px 5px 25px #000;
 }
+
 .Current-condition-container {
-  align-items: center;
+  padding-top: 70px;
   justify-content: center;
   display: flex;
   height: 100%;
@@ -49,7 +50,7 @@
 .Location {
   font-size: 50px;
   text-shadow: 1px 1px #000;
-  padding-top: 150px;
+  padding-top: 70px;
 }
 
 .Current-text{
@@ -71,6 +72,54 @@
   .Location {
     font-size: 40px;
   }
+}
 
-  
+@media screen and (max-width: 750px) {
+  .Condition-background {
+    position: fixed;
+    top: 9%;
+    left: 10%;
+    flex-direction: column;
+  }
+  .Temperature-container {
+    height: 200px;
+    width: 200px;
+    padding-top: 30px;
+  }
+
+  .Current-condition-container {
+    padding-top: 35px;
+    height: 40%;
+    width: 100%;
+  }
+
+  .Temperature {
+    padding: 30px 0 0;
+  }
+
+  .Current-location-container {
+    height: 60%;
+    width: 100%;
+  }
+
+  .Location,
+  .Current-date-text,
+  .Current-high-text,
+  .Current-low-text {
+    display: inline-block;
+  }
+
+  .Location {
+    font-size: 40px;
+    float: left;
+    padding: 0;
+    margin: 0;
+    float: left;
+  }
+
+
+
+
+
+
 }

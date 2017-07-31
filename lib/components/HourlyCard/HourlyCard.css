@@ -8,8 +8,6 @@
   text-shadow: 2px 2px #000;
   top: 60%;
   width: 80%;
-
-
 }
 
 .Hourly-card {
@@ -30,4 +28,19 @@
     height: 70px;
     width: 70px;
   }
+}
+
+@media screen and (max-width: 750px) {
+.Hourly-card-container {
+  position: fixed;
+  top: 60%;
+  left: 10%;
+  }
+
+  .Hourly-card {
+    font-size: 10px;
+    height: 60px;
+    width: 60px;
+  }
+
 }
