@@ -11,7 +11,7 @@
     "eol-last": [0],
     "no-mixed-requires": [0],
     "no-underscore-dangle": [0],
-    "no-unused-vars": ["error", { "vars": "local", "args": "none", "ignoreRestSiblings": true }],
-    
+    "no-undef": [0],
+    "no-unused-vars": [0],
   }
 }

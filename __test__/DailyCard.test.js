@@ -9,10 +9,6 @@ describe('DailyCard', () => {
     wrapper = shallow(<DailyCard />);
   });
 
-  afterEach(() => {
-    localStorage.clear();
-  });
-
   it('should exist', () => {
 
     expect(wrapper).toBeDefined();
