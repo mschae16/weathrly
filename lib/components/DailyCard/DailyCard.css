@@ -59,7 +59,19 @@ p {
     width: 100%;
     box-shadow: .5px 4px 10px #000;
   }
-  p {
+
+  .Day-text {
+    float: left;
+    padding: 15px 0 0 65px;
+    font-size: 20px;
     display: inline-block;
   }
+
+  .Temp-range-text {
+    float: right;
+    padding: 15px 65px 0 0;
+    font-size: 20px;
+    display: inline-block;
+  }
+
 }

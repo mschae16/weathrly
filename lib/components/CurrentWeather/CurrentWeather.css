@@ -10,6 +10,7 @@
   margin: auto;
   box-shadow: 5px 5px 25px #000;
 }
+
 .Current-condition-container {
   padding-top: 70px;
   justify-content: center;
@@ -78,7 +79,47 @@
     position: fixed;
     top: 9%;
     left: 10%;
-    /*z-index: 100*/
+    flex-direction: column;
   }
+  .Temperature-container {
+    height: 200px;
+    width: 200px;
+    padding-top: 30px;
+  }
+
+  .Current-condition-container {
+    padding-top: 35px;
+    height: 40%;
+    width: 100%;
+  }
+
+  .Temperature {
+    padding: 30px 0 0;
+  }
+
+  .Current-location-container {
+    height: 60%;
+    width: 100%;
+  }
+
+  .Location,
+  .Current-date-text,
+  .Current-high-text,
+  .Current-low-text {
+    display: inline-block;
+  }
+
+  .Location {
+    font-size: 40px;
+    float: left;
+    padding: 0;
+    margin: 0;
+    float: left;
+  }
+
+
+
+
+
 
 }
