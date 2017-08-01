@@ -1,4 +1,4 @@
-export const mockData = {
+export default {
   "currentData": {
     "temperature": 77.7,
     "location": "Denver, CO",
