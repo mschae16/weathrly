@@ -12,4 +12,6 @@ describe('CurrentWeather', () => {
   it('should exist', () => {
     expect(wrapper).toBeDefined();
   });
+
+  it('should')
 });
