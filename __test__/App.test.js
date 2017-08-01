@@ -16,4 +16,17 @@ describe('App', () => {
   it('should exist', () => {
     expect(wrapper).toBeDefined();
   });
+
+  it('should have a default status of closed and condition of empty object', () => {
+    expect(wrapper.state()).toEqual({ status: 'closed', condition: {} })
+  });
+
+  it('should change the status', () => {
+    expect(wrapper.state()).toEqual({ status: 'closed', condition: {} })
+    wrapper.setState({ status: 'open', condition: {} })
+    expect(wrapper.state()).toEqual({ status: 'open', condition: {} })
+  });
+
+
+
 });
