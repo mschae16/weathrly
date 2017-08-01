@@ -5,6 +5,8 @@ import HourlyWeather from '../lib/components/HourlyWeather/HourlyWeather';
 describe('HourlyWeather', () => {
   let wrapper;
 
+  const data
+
   beforeEach(() => {
     wrapper = shallow(<HourlyWeather />);
   });
