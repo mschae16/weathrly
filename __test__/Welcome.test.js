@@ -17,4 +17,12 @@ describe('Welcome', () => {
 
     expect(wrapper).toBeDefined();
   });
+
+  it.skip('should have a default state', () => {
+    expect(wrapper.state()).toEqual({
+      inputLocation: '',
+      suggestions: [],
+      trie: new Trie(),
+    });
+  });
 });

@@ -10,7 +10,6 @@ describe('DailyCard', () => {
   });
 
   it('should exist', () => {
-
     expect(wrapper).toBeDefined();
   });
 });
