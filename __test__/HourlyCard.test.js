@@ -10,11 +10,21 @@ describe('HourlyCard', () => {
     wrapper = shallow(<HourlyCard
       time={mockData.hourlyData[0].time}
       icon={mockData.hourlyData[0].icon}
-      temperature={mockData.hourlyData[0].temp}/>);
+      temperature={mockData.hourlyData[0].temp} />);
   });
 
   it('should exist', () => {
     expect(wrapper).toBeDefined();
+  });
+
+  it('should render div with className of Hourly-card', () => {
+    expect(wrapper.find('div.Hourly-card').length).toEqual(1);
+  });
+
+  it('should render paragraph elements', () => {
+    expect(wrapper.find('p.Time-Text').length).toEqual(1);
+
+    expect(wrapper.find('p.Temp-text').length).toEqual(1);
   });
 
   it('should display a time', () => {

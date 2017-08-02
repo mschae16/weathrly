@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import App from '../lib/components/App/App';
+import Welcome from '../lib/components/Welcome/Welcome';
 
 describe('App', () => {
   let wrapper;
@@ -20,8 +21,9 @@ describe('App', () => {
   it.skip('should render the Welcome display if localStorage is empty', () => {
     expect(localStorage.store).toEqual({});
     expect(wrapper.find('.welcome-display')).toHaveLength(0);
-    let rendered = wrapper.instance().render();
-    expect(wrapper.find('.welcome-display')).toHaveLength(1);
+    expect(mount(<App />).find('.welcome-display').length).toEqual(1);
+
+    // expect(wrapper.find('.welcome-display')).toHaveLength(1);
   });
 
   it('should have a default state', () => {

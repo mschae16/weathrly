@@ -23,6 +23,32 @@ describe('CurrentWeather', () => {
     expect(wrapper).toBeDefined();
   });
 
+  it('should render divs with appropriate classNames', () => {
+    expect(wrapper.find('div.Condition-background').length).toEqual(1);
+
+    expect(wrapper.find('div.Current-condition-container').length).toEqual(1);
+
+    expect(wrapper.find('div.Temperature-container').length).toEqual(1);
+
+    expect(wrapper.find('div.Current-location-container').length).toEqual(1);
+  });
+
+  it('should render appropriate headings', () => {
+    expect(wrapper.find('h1.Temperature').length).toEqual(1);
+
+    expect(wrapper.find('h1.Location').length).toEqual(1);
+  });
+
+  it('should render appropriate paragraph elements', () => {
+    expect(wrapper.find('p.Current-conditon-text').length).toEqual(1);
+
+    expect(wrapper.find('p.Current-date-text').length).toEqual(1);
+
+    expect(wrapper.find('p.Current-high-text').length).toEqual(1);
+
+    expect(wrapper.find('p.Current-low-text').length).toEqual(1);
+  });
+
   it('should display a temperature', () => {
     const currentTemp = wrapper.find('.Temperature');
     expect(currentTemp.text()).toEqual('77° F');

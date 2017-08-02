@@ -19,6 +19,16 @@ describe('DailyCard', () => {
     expect(wrapper).toBeDefined();
   });
 
+  it('should render div with className of Daily-card', () => {
+    expect(wrapper.find('div.Daily-card').length).toEqual(1);
+  });
+
+  it('should render paragraph elements', () => {
+    expect(wrapper.find('p.Day-text').length).toEqual(1);
+
+    expect(wrapper.find('p.Temp-range-text').length).toEqual(1);
+  });
+
   it('should display a day', () => {
     const day = wrapper.find('.Day-text');
     expect(day.text()).toEqual('Sun');
