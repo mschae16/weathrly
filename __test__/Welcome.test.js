@@ -14,7 +14,6 @@ describe('Welcome', () => {
   });
 
   it('should exist', () => {
-
     expect(wrapper).toBeDefined();
   });
 
