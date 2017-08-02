@@ -41,7 +41,7 @@
 .Search-input-field, .Search-button {
   opacity: .70;
   border: none;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
   height: 30px;
   outline: none;
   box-shadow: 5px 5px 25px #000;
@@ -50,7 +50,7 @@
 .Drop-down-welcome {
   background-color: white;
   border: none;
-  border-radius: 0 0 5px 5px;
+  border-radius: 5px;
   margin: auto;
   margin-top: 10px;
   max-height: 300px;
@@ -76,25 +76,13 @@ ul {
   list-style: none;
 }
 
-
-@media screen and (max-width: 800px) {
-
-  .Search-input-field {
-    width: 40%;
-  }
-
-  .Search-button {
-    width: 20%;
-  }
-}
-
 @media screen and (max-width: 500px) {
   .Welcome-heading {
     font-size: 80px;
   }
 
   .Search-input-field {
-    width: 50%;
+    width: 70%;
   }
 
   .Search-button {

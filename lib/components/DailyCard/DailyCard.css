@@ -12,12 +12,12 @@
 }
 
 .Daily-card {
-  font-size: 12px;
-  color: #FFF;
-  height: 80px;
-  width: 70px;
-  text-align: center;
   box-shadow: .5px 4px 10px #000;
+  color: #FFF;
+  font-size: 12px;
+  height: 80px;
+  text-align: center;
+  width: 70px;
 }
 
 p {
@@ -32,52 +32,57 @@ p {
   }
 }
 
-  @media screen and (max-width: 850px) {
-    .Daily-card {
-      font-size: 10px;
-      height: 60px;
-      width: 50px;
-    }
+@media screen and (max-width: 850px) {
+  .Daily-card {
+    font-size: 10px;
+    height: 60px;
+    width: 50px;
+  }
 
-    img {
-      height: 50px;
-      width: 50px;
-    }
+  img {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 @media screen and (max-width: 750px) {
   .Daily-card-container {
     flex-direction: column;
     z-index: -1;
-
   }
+
   .Daily-card {
-    font-size: 14px;
-    margin-bottom: 10px;
-    height: 100px;
-    width: 100%;
     box-shadow: .5px 4px 10px #000;
+    font-size: 14px;
+    height: 100px;
+    margin-bottom: 10px;
+    width: 99%;
   }
 
   .Day-text {
-    float: left;
-    padding: 15px 0 0 65px;
-    font-size: 20px;
     display: inline-block;
+    float: left;
+    font-size: 20px;
+    padding: 15px 0 0 65px;
   }
 
   .Temp-range-text {
+    display: inline-block;
+    font-size: 20px;
     float: right;
     padding: 15px 65px 0 0;
-    font-size: 20px;
-    display: inline-block;
   }
 }
 
 @media screen and (max-width: 500px) {
   .Temp-range-text {
-    padding: 15px 20px 0 0;
     font-size: 14px;
+    padding: 15px 20px 0 0;
+  }
+
+  img {
+    height: 40px;
+    width: 40px;
   }
 
   .Day-text {
@@ -96,10 +101,5 @@ p {
     text-align: center;
     padding: 14px;
     text-decoration: none;
-}
-
-
-
-
-
+  }
 }

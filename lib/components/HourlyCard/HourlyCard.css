@@ -31,14 +31,22 @@
 }
 
 @media screen and (max-width: 750px) {
-.Hourly-card-container {
-  position: fixed;
-  top: 60%;
-  left: 10%;
+  .Hourly-card-container {
+    left: 10%;
+    position: fixed;
+    top: 60%;
   }
 
   .Hourly-card {
     font-size: 10px;
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .Hourly-card {
+    font-size: 8px;
     height: 60px;
     width: 60px;
   }
