@@ -1,7 +1,7 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow, mount, render } from 'enzyme';
 import App from '../lib/components/App/App';
-import Welcome from '../lib/components/Welcome/Welcome';
+import mockData from '../__test-helpers__/mockData.js';
 
 describe('App', () => {
   let wrapper;
@@ -16,14 +16,6 @@ describe('App', () => {
 
   it('should exist', () => {
     expect(wrapper).toBeDefined();
-  });
-
-  it.skip('should render the Welcome display if localStorage is empty', () => {
-    expect(localStorage.store).toEqual({});
-    expect(wrapper.find('.welcome-display')).toHaveLength(0);
-    expect(mount(<App />).find('.welcome-display').length).toEqual(1);
-
-    // expect(wrapper.find('.welcome-display')).toHaveLength(1);
   });
 
   it('should have a default state', () => {
@@ -43,6 +35,34 @@ describe('App', () => {
     expect(wrapper.state('error')).toEqual(false);
   });
 
+  it('should render the Welcome display if localStorage is empty', () => {
+    expect(localStorage.store).toEqual({});
+    expect(wrapper.state().location).toEqual(null);
+    wrapper.instance().render();
+    expect(wrapper.find('.welcome-display')).toBeTruthy();
+  });
+
+  it('should render the Error display if location cannot be found', () => {
+    wrapper.instance().setState({ error: true });
+    expect(wrapper.state().error).toEqual(true);
+    wrapper.instance().render();
+    expect(wrapper.find('.error-display')).toBeTruthy();
+  });
+
+  it('should render the current weather display if location is found', () => {
+    wrapper.instance().setState({
+      location: 'CO/Denver',
+      currentData: mockData.currentData,
+      hourlyData: mockData.hourlyData,
+      tenDay: mockData.tenDay,
+      error: false,
+    });
+    expect(wrapper.state().location).toEqual('CO/Denver');
+    expect(wrapper.state().error).toEqual(false);
+    wrapper.instance().render();
+    expect(wrapper.find('.weather-display')).toBeTruthy();
+  });
+
   it('should be able to save location to localStorage', () => {
     const location = 'Denver, CO';
     wrapper.instance().saveToStorage(location);
@@ -55,7 +75,4 @@ describe('App', () => {
     expect(localStorage.store.location).toEqual('Denver, CO');
     expect(localStorage.getItem('location')).toEqual('Denver, CO');
   });
-
-  it('should be able ')
-
 });
