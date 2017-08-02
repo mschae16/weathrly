@@ -38,7 +38,7 @@ describe('HourlyCard', () => {
   });
 
   it('should display temperature', () => {
-    const currentTemp = wrapper.find('.Temp-text');
-    expect(currentTemp.text()).toEqual('75 °F');
+    const temperature = wrapper.find('.Temp-text');
+    expect(temperature.text()).toEqual('75 °F');
   });
 });
