@@ -1,21 +1,28 @@
 .Hourly-card-container {
   display: flex;
   flex-direction: row;
-  height: 80px;
+  height: 125px;
   justify-content: space-between;
   left: 10%;
   position: absolute;
   text-shadow: 2px 2px #000;
   top: 60%;
   width: 80%;
+
 }
 
 .Hourly-card {
   color: #FFF;
-  font-size: 16px;
-  height: 80px;
-  width: 80px;
+  font-size: 14px;
+  height: 120px;
+  margin: 0 10px;
+  padding: 0 20px;
   text-align: center;
+  width: 200px;
+}
+
+.Temp-text {
+  padding-top: 5px;
 }
 
 .Text{
@@ -23,10 +30,8 @@
 }
 
 @media screen and (max-width: 850px) {
-  .Hourly-card {
-    font-size: 12px;
-    height: 70px;
-    width: 70px;
+  .Hourly-card-container {
+    overflow-x: scroll;
   }
 }
 
@@ -36,19 +41,4 @@
     position: fixed;
     top: 60%;
   }
-
-  .Hourly-card {
-    font-size: 10px;
-    height: 60px;
-    width: 60px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .Hourly-card {
-    font-size: 8px;
-    height: 60px;
-    width: 60px;
-  }
-
 }
