@@ -52,7 +52,7 @@ describe('Welcome', () => {
     const component = shallow(<Welcome onChange={mockFn} />);
     const input = component.find('input');
 
-    // input.simulate('change', { target: { value: '7' } });
+    // input.simulate('change', { target: { value: 'd' } });
 
     input.simulate('change', { key: 'd', keyCode: 68, which: 68 });
 
