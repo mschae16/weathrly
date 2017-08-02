@@ -83,9 +83,9 @@ ul {
   .Search-bar-cont {
     position: absolute;
     top: 60px;
-    left: 25px;
+    right: 25px;
   }
-  
+
   .Heading {
     left: 100px;
     margin-bottom: 0;
@@ -95,16 +95,15 @@ ul {
   }
 
   .Drop-down-refresh {
-    left: 25px;
+    right: 135px;
     top: 95px;
     width: 200px;
   }
 }
 
 @media screen and (max-width: 420px) {
-
   .Search-bar-cont {
-    left: 15px;
+    right: 15px;
   }
 }
 
@@ -124,10 +123,9 @@ ul {
   .Search-bar-cont {
     position: absolute;
     top: 60px;
-    left: 35px;
+    right: 35px;
   }
   .Drop-down-refresh {
-    left: 32px;
     top: 95px;
     width: 150px;
   }
@@ -143,7 +141,7 @@ ul {
     left: 20px;
   }
   .Drop-down-refresh {
-    left: 20px;
+    /*left: 20px;*/
   }
 }
 
@@ -157,6 +155,6 @@ ul {
   }
 
   .Drop-down-refresh {
-    left: 7px;
+    right: 7px;
   }
 }
