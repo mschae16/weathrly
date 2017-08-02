@@ -19,7 +19,7 @@ describe('HourlyWeather', () => {
   it('should have a container div with className of Hourly-card-container', () => {
     const hourlyWeather = wrapper.find('.Hourly-card-container');
     expect(hourlyWeather).toHaveLength(1);
-  })
+  });
 
   it('should render seven hourly weather cards', () => {
     const hourlyWeather = wrapper.find(HourlyCard);
