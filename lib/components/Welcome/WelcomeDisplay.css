@@ -1,71 +1,68 @@
 .Heading-container {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-  height: 75px;
-  width: 80%;
-  margin: auto;
   background-color: inherit;
+  display: flex;
+  height: 75px;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 20px;
+  width: 80%;
 }
 
 .Heading {
   display: flex;
-  margin-top: 0;
   color: #FFF;
-  font-size: 24px;
-  text-shadow: 2px 2px #000;
   font-family: 'Lemonada', cursive;
+  font-size: 24px;
+  margin-top: 0;
+  text-shadow: 2px 2px #000;
 }
 
-
-
 .Search-input {
-  height: 25px;
-  width: 200px;
-  padding: 10px;
   box-shadow: 5px 5px 25px #000;
+  height: 25px;
+  padding: 10px;
+  width: 200px;
 }
 
 .Search-btn {
-  margin-left: 10px;
   border: none;
-  height: 25px;
-  width: 100px;
   box-shadow: 5px 5px 25px #000;
+  height: 25px;
+  margin-left: 10px;
+  width: 100px;
 }
 
 .Search-input, .Search-btn {
-  outline: none;
   border: none;
-  opacity: .50;
   border-radius: 5px;
+  opacity: .50;
+  outline: none;
 }
 
 .Search-bar-cont {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   height: 100px;
+  justify-content: flex-end;
   position: relative;
 }
 
 .Drop-down-refresh {
-  cursor: pointer;
-  position: absolute;
   background-color: white;
-  overflow: scroll;
+  cursor: pointer;
   max-height: 600px;
   opacity: .80;
-  width: 200px;
+  overflow: scroll;
+  position: absolute;
   right: 110px;
   top:55px;
+  width: 200px;
   z-index: 10;
-
 }
-ul {
-  text-align: center;
-  padding: 0;
 
+ul {
+  padding: 0;
+  text-align: center;
 }
 
 @media screen and (max-width: 750px) {
@@ -76,8 +73,90 @@ ul {
     background-color: inherit;
     z-index: 100;
   }
+}
 
+@media screen and (max-width: 450px) {
+  .Heading-container {
+    padding-top: 0;
+  }
+
+  .Search-bar-cont {
+    position: absolute;
+    top: 60px;
+    left: 25px;
+  }
   
+  .Heading {
+    left: 100px;
+    margin-bottom: 0;
+    position: absolute;
+    top: 5px;
+    font-size: 32px;
+  }
 
+  .Drop-down-refresh {
+    left: 25px;
+    top: 95px;
+    width: 200px;
+  }
+}
 
+@media screen and (max-width: 420px) {
+
+  .Search-bar-cont {
+    left: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Heading {
+    left: 75px;
+  }
+
+  .Search-btn {
+    width: 80px;
+  }
+
+  .Search-input {
+    width: 150px;
+  }
+
+  .Search-bar-cont {
+    position: absolute;
+    top: 60px;
+    left: 35px;
+  }
+  .Drop-down-refresh {
+    left: 32px;
+    top: 95px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+  .Heading {
+    left: 55px;
+  }
+
+  .Search-bar-cont {
+    left: 20px;
+  }
+  .Drop-down-refresh {
+    left: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Search-bar-cont {
+    left: 8px;
+  }
+
+  .Heading {
+    left: 45px;
+  }
+
+  .Drop-down-refresh {
+    left: 7px;
+  }
 }

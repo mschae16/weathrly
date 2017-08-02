@@ -1,33 +1,33 @@
 .Condition-background {
+  background-image: url('https://tylermoeller.github.io/local-weather-app/assets/img/clear.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 25px #000;
   display: flex;
   flex-direction: row;
-  background-image: url('https://tylermoeller.github.io/local-weather-app/assets/img/clear.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 65vh;
-  width: 80%;
   margin: auto;
-  box-shadow: 5px 5px 25px #000;
+  width: 80%;
 }
 
 .Current-condition-container {
-  padding-top: 70px;
-  justify-content: center;
   display: flex;
   height: 100%;
+  justify-content: center;
   margin: auto;
+  padding-top: 70px;
   width: 50%;
 }
 
 .Temperature-container {
   background-color: #FFF;
   border-radius: 50%;
+  box-shadow: 8px 8px 5px #000;
   height: 300px;
-  width: 300px;
   opacity: .45;
   text-align: center;
-  box-shadow: 8px 8px 5px #000;
+  width: 300px;
 }
 
 .Temperature {
@@ -47,17 +47,17 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 50%;
   text-align: center;
+  width: 50%;
 }
 
 .Location {
   font-size: 50px;
-  text-shadow: 1px 1px #000;
   padding-top: 70px;
+  text-shadow: 1px 1px #000;
 }
 
-.Current-text{
+.Current-text {
   font-size: 20px;
   padding-bottom: 15px;
   text-shadow: 1px 1px #000;
@@ -80,20 +80,20 @@
 
 @media screen and (max-width: 750px) {
   .Condition-background {
+    flex-direction: column;
+    left: 10%;
     position: fixed;
     top: 9%;
-    left: 10%;
-    flex-direction: column;
   }
   .Temperature-container {
     height: 200px;
-    width: 200px;
     padding-top: 30px;
+    width: 200px;
   }
 
   .Current-condition-container {
-    padding-top: 35px;
     height: 40%;
+    padding-top: 35px;
     width: 100%;
   }
 
@@ -102,47 +102,36 @@
   }
 
   .Current-location-container {
+    position: relative;
     height: 60%;
     width: 100%;
-    position: relative;
-  }
-
-  .Location,
-  .Current-date-text,
-  .Current-high-text,
-  .Current-low-text {
-    display: inline-block;
   }
 
   .Location {
     font-size: 40px;
     float: left;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 50px;
     left: 20px;
+    margin: 25px 0 0 0;
+    padding: 0;
+    top: 50px;
   }
 
   .Current-date-text {
-    position: absolute;
-    top: 90px;
-    left: 40px;
     font-size: 20px;
+    left: 40px;
+    top: 90px;
   }
 
   .Current-high-text {
-    position: absolute;
-    top: 50px;
-    right: 40px;
     font-size: 20px;
+    right: 40px;
+    top: 50px;
   }
 
   .Current-low-text {
-    position: absolute;
-    top: 85px;
-    right:40px;
     font-size: 20px;
+    right:40px;
+    top: 85px;
   }
 }
 

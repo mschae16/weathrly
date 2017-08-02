@@ -1,119 +1,101 @@
 .Error-container {
+  align-items: center;
   background-image: url('https://typeset-beta.imgix.net/rehost%2F2016%2F9%2F13%2F6eebc156-80f9-4102-a1ae-2b8a94490468.jpg');
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: 5px 5px 25px #000;
   display: flex;
-  margin: auto;
-  height: 90vh;
-  width: 95%;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
+  height: 100vh;
+  margin: auto;
   position: relative;
+  justify-content: center;
+  width: 100vh%;
 }
 
 .lost-img {
-  width: 60%;
-  position: absolute;
-  top: 42%;
-  left: 21%;
+
+  height: 500px;
+  margin: auto;
+  margin-top: 200px;
+  width: 500px;
 }
 
 .Error-search {
   display: flex;
-  width: 100%;
   justify-content: center;
   position: absolute;
-  top: 230px;
+  bottom: 400px;
+  width: 100%;
 }
 
 .Error-input-field {
-  width: 70%;
   cursor: text;
+  width: 70%;
 }
 
 .Error-button {
-  width: 30%;
-  margin-left: 10px;
   cursor: pointer;
+  margin-left: 10px;
+  width: 30%;
 }
 
 .Error-input-field, .Error-button {
-  opacity: .70;
   border: none;
-  border-radius: 5px 5px 0 0;
-  height: 30px;
-  outline: none;
+  border-radius: 5px 5px;
   box-shadow: 5px 5px 25px #000;
+  height: 30px;
+  opacity: .70;
+  outline: none;
 }
 
 .Drop-down-error{
   background-color: white;
   border: none;
-  border-radius: 0 0 5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
   margin: auto;
   margin-top: 10px;
-  max-height: 100px;
+  max-height: 200px;
   opacity: .70;
   overflow: scroll;
   position: absolute;
+  bottom: 190px;
   width: 69%;
-  cursor: pointer;
-  top: 255px;
 }
 
 .Giraffe-container {
-  width: 50%;
   height: 300px;
   position: relative;
+  width: 50%;
 }
 
 ul {
-  text-align: center;
   padding: 0;
+  text-align: center;
 }
 
 .Possible-city {
   list-style: none;
 }
 
-
-@media screen and (max-width: 800px) {
-
-  .Search-input-field {
-    width: 40%;
-  }
-
-  .Search-button {
-    width: 20%;
-  }
-}
-
 @media screen and (max-width: 500px) {
   .Welcome-heading {
-    font-size: 80px;
+    font-size: 70px;
   }
 
   .Search-input-field {
-    width: 50%;
+    width: 80%;
   }
 
   .Search-button {
     width: 30%;
   }
+}
 
 @media screen and (max-width: 425px) {
   .Welcome-heading {
     font-size: 55px;
   }
-
-  @media screen and (max-width:)
-}
-
-
-
-
-
 }
