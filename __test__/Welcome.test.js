@@ -47,15 +47,11 @@ describe('Welcome', () => {
     expect(mockFn).toHaveBeenCalledTimes(2);
   });
 
-  it.skip('should call a function on input change', () => {
-    const mockFn = jest.fn();
-    const component = shallow(<Welcome onChange={mockFn} />);
-    const input = component.find('input');
+  it('should call a function on input change', () => {
+    const input = wrapper.find('input').first();
 
-    // input.simulate('change', { target: { value: 'd' } });
+    input.simulate('change', { target: { value: 'Denver, CO' } });
 
-    input.simulate('change', { key: 'd', keyCode: 68, which: 68 });
-
-    expect(mockFn).toHaveBeenCalledTimes(1);
+    expect(wrapper.state().inputLocation).toEqual('Denver, CO');
   });
 });
